@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MediCare Pharmacy - medicines, wellness products and prescription services.">
+  <title>MediCare Pharmacy | Your Health, Our Priority</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html"><span>✚</span> MediCare <small>PHARMACY</small></a>
+    <button class="menu-btn" id="menuBtn">☰</button>
+    <nav id="navMenu">
+      <a href="index.html" class="active">Home</a>
+      <div class="medicine-dropdown-wrap"><a href="medicines.html">Medicines <span class="medicine-chevron">⌄</span></a><div class="medicine-dropdown"><a href="medicines.html" data-system="Dermatology / Skin Care">Derma <b>›</b></a><a href="medicines.html" data-system="Gastro-Intestinal Tract">Gastro-Intestinal Tract <b>›</b></a><a href="medicines.html" data-system="Circulatory System">Circulatory System <b>›</b></a><a href="medicines.html" data-system="Others">Others <b>›</b></a><a href="medicines.html" data-system="Endocrine System">Endocrine System <b>›</b></a><a href="medicines.html" data-system="Eyes , Nose , Ear">Eyes , Nose , Ear <b>›</b></a><a href="medicines.html" data-system="Urinary Tract System">Urinary Tract System <b>›</b></a><a href="medicines.html" data-system="Central Nervous System">Central Nervous System <b>›</b></a><a href="medicines.html" data-system="Respiratory Tract System">Respiratory Tract System <b>›</b></a><a href="medicines.html" data-system="Cardio-Vascular System">Cardio-Vascular System <b>›</b></a></div></div>
+      <a href="doctors.html">Doctor Guidance</a>
+      <a href="prescription.html">Prescription</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" onclick="location.href='cart.html'">🛒 <b id="cartCount">0</b></button>
+      <button class="icon-btn" onclick="location.href='login.html'">👤</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">TRUSTED PHARMACY CARE</span>
+      <h1>Your health.<br><strong>Our priority.</strong></h1>
+      <p>Shop medicines and wellness products, upload prescriptions, and access reliable health guidance in one place.</p>
+      <div class="hero-buttons">
+        <a class="btn primary" href="medicines.html">Shop Medicines →</a>
+        <a class="btn secondary" href="prescription.html">Upload Prescription</a>
+      </div>
+      <div class="trust-row"><span>✓ Genuine products</span><span>✓ Secure checkout</span><span>✓ Pharmacist support</span></div>
+    </div>
+    <div class="hero-card">
+      <div class="medical-cross">✚</div>
+      <h3>Pharmacy Care</h3>
+      <p>Safe, convenient and organized healthcare shopping.</p>
+      <div class="hero-stat"><b>24/7</b><span>Online ordering</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="container section">
+  <div class="section-head"><div><span class="eyebrow">EXPLORE</span><h2>Shop by category</h2></div><a href="medicines.html">View all →</a></div>
+  <div class="category-grid">
+    <a class="category" href="medicines.html?cat=Pain%20Relief"><span>💊</span><b>Pain Relief</b><small>30+ products</small></a>
+    <a class="category" href="medicines.html?cat=Cold%20%26%20Flu"><span>🤧</span><b>Cold & Flu</b><small>25+ products</small></a>
+    <a class="category" href="medicines.html?cat=Vitamins"><span>🍊</span><b>Vitamins</b><small>40+ products</small></a>
+    <a class="category" href="medicines.html?cat=Skin%20Care"><span>🧴</span><b>Skin Care</b><small>35+ products</small></a>
+    <a class="category" href="medicines.html?cat=Baby%20Care"><span>👶</span><b>Baby Care</b><small>20+ products</small></a>
+    <a class="category" href="medicines.html?cat=First%20Aid"><span>🩹</span><b>First Aid</b><small>25+ products</small></a>
+  </div>
+</section>
+
+<section class="container section">
+  <div class="section-head"><div><span class="eyebrow">POPULAR</span><h2>Featured products</h2></div><a href="medicines.html">Browse medicines →</a></div>
+  <div class="product-grid" id="featuredProducts"></div>
+</section>
+
+<section class="container section">
+  <div class="info-banner">
+    <div><span class="eyebrow">PRESCRIPTION SERVICE</span><h2>Have a prescription?</h2><p>Upload your prescription and our pharmacy team can review the order requirements.</p></div>
+    <a class="btn white" href="prescription.html">Upload Prescription →</a>
+  </div>
+</section>
+
+<section class="container section">
+  <div class="section-head"><div><span class="eyebrow">HEALTH GUIDANCE</span><h2>Before you take a medicine</h2></div></div>
+  <div class="tips-grid">
+    <article><span>01</span><h3>Read the label</h3><p>Check the active ingredient, strength, expiry date and package instructions.</p></article>
+    <article><span>02</span><h3>Check interactions</h3><p>Tell your doctor or pharmacist about medicines and supplements you already use.</p></article>
+    <article><span>03</span><h3>Ask a professional</h3><p>For diagnosis, prescription dosing or urgent symptoms, contact a qualified healthcare professional.</p></article>
+  </div>
+</section>
+</main>
+
+<footer class="footer"><div class="container footer-grid">
+  <div><a class="brand light" href="index.html"><span>✚</span> MediCare</a><p>Accessible pharmacy shopping and health information.</p></div>
+  <div><h4>Quick links</h4><a href="medicines.html">Medicines</a><a href="doctors.html">Doctor Guidance</a><a href="prescription.html">Prescription</a></div>
+  <div><h4>Support</h4><a href="contact.html">Contact us</a><a href="orders.html">My orders</a><a href="login.html">Account</a></div>
+  <div><h4>Important</h4><p class="tiny">Information on this pharmacy website is educational and does not replace diagnosis or personalized medical advice. Prescription medicines require appropriate professional review.</p></div>
+</div><div class="container copyright">© 2026 MediCare Pharmacy. Trusted Pharmacy Care & Services.</div></footer>
+<script src="js/data.js"></script><script src="js/app.js"></script>
+</body></html>

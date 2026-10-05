@@ -1,0 +1,5 @@
+const search=document.getElementById('searchInput'),cat=document.getElementById('categoryFilter'),sort=document.getElementById('sortFilter'),grid=document.getElementById('productGrid');
+[...new Set(products.map(p=>p.category))].sort().forEach(c=>cat.insertAdjacentHTML('beforeend',`<option>${c}</option>`));
+const params=new URLSearchParams(location.search);if(params.get('cat'))cat.value=params.get('cat');
+function render(){let arr=products.filter(p=>(!cat.value||p.category===cat.value)&&(!search.value||`${p.name} ${p.generic} ${p.category}`.toLowerCase().includes(search.value.toLowerCase())));if(sort.value==='low')arr.sort((a,b)=>a.price-b.price);if(sort.value==='high')arr.sort((a,b)=>b.price-a.price);if(sort.value==='name')arr.sort((a,b)=>a.name.localeCompare(b.name));grid.innerHTML=arr.length?arr.map(productCard).join(''):'<div class="empty"><h2>No products found</h2><p>Try another search or category.</p></div>'}
+[search,cat,sort].forEach(x=>x.addEventListener('input',render));render();
